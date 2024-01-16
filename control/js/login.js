@@ -32,10 +32,8 @@ class Login {
 			);
 			return false;
 		} else {
-			if (field.type == "password") {
-				this.setStatus(field, null, true);
-				return true;
-		    }
+			this.setStatus(field, null, true);
+			return true;
 	    }
     }
 
@@ -47,9 +45,7 @@ class Login {
 				errorMessage.innerText = "";
 			}
 			field.classList.remove("inputError");
-		}
-
-		if (!success) {
+		}else{
 			errorMessage.innerText = message;
 			field.classList.add("inputError");
 		}
