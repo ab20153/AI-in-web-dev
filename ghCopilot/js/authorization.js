@@ -1,25 +1,27 @@
-// Get the auth value from localStorage
-var auth = localStorage.getItem("auth");
-
-// Check if the auth value is true or false
-if (auth == "true") {
-  // Allow the user to access the home.html page
-  console.log("You are authorized to access this page");
-} else {
-  // Redirect the user to the index.html page
-  window.location = "index.html";
+// Check if the user is authorized
+function checkAuthorization() {
+  // Check if the user has the "auth" name/value pair with value true
+  return localStorage.getItem("auth") === "true";
 }
 
-// Get the log out button element
-var logoutButton = document.getElementById("logout");
+// Redirect unauthorized users to the login page
+function redirectToLogin() {
+  window.location.href = 'index.html';
+}
 
-// Define the function to log out the user
-function logout() {
-  // Remove the auth value from localStorage
+// Handle the "Log out" button click event
+function handleLogout() {
+  // Clear the "auth" name/value pair
   localStorage.removeItem("auth");
-  // Redirect the user to the index.html page
-  window.location = "index.html";
+  // Redirect the user to the login page
+  window.location.href = 'index.html';
 }
 
-// Bind the logout function to the onclick event of the button
-logoutButton.onclick = logout;
+// Check authorization on page load
+if (!checkAuthorization()) {
+  redirectToLogin();
+}
+
+// Attach event listener to the "Log out" button
+const logoutButton = document.getElementById('logoutButton');
+logoutButton.addEventListener('click', handleLogout);
