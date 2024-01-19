@@ -1,0 +1,44 @@
+/* Define a light blue background color */
+body {
+   background-color: #ADD8E6;
+}
+
+/* Define a lighter blue background color and a thin, rounded purple outline for the login form and homepage containers */
+.container {
+   background-color: #B0E0E6;
+   border: 1px solid purple;
+   border-radius: 5px;
+}
+
+/* Define a thin, rounded purple outline for the input fields */
+input[type=text], input[type=password] {
+   border: 1px solid purple;
+   border-radius: 5px;
+}
+
+/* Define a thicker, rounded blue outline for the input fields when they receive focus */
+input[type=text]:focus, input[type=password]:focus {
+   border: 2px solid blue;
+   border-radius: 5px;
+}
+
+/* Define a red font color and smaller font size compared to the rest of the text for the error message containers */
+.error {
+   color: red;
+   font-size: 0.9em;
+}
+
+/* Define a purple background color and white font color for the "Login" and "Log out" buttons */
+button {
+   background-color: purple;
+   color: white;
+   border: none;
+   padding: 10px 20px;
+   cursor: pointer;
+}
+
+/* Define a blue background color and white font color for the "Login" and "Log out" buttons when user hovers over them */
+button:hover {
+   background-color: blue;
+   color: white;
+}

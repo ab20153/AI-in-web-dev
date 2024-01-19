@@ -1,0 +1,41 @@
+/* General styles */
+body {
+   font-family: Arial, sans-serif;
+   line-height: 1.6em;
+   color: #333;
+   padding: 20px;
+}
+
+header {
+   background: #f4f4f4;
+   padding: 10px;
+   text-align: center;
+}
+
+footer {
+   background: #f4f4f4;
+   padding: 10px;
+   text-align: center;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+}
+
+/* Styles specific to home.html */
+.home h2 {
+   color: #333;
+}
+
+.home p {
+   color: #666;
+}
+
+/* Styles specific to index.html */
+.index h2 {
+   color: #f44336;
+}
+
+.index p {
+   color: #ffebee;
+}
