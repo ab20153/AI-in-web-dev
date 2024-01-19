@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title lang="en">Login</title> <!-- This is the title that appears in the browser's tab or window -->
+  <!-- Link to the CSS file -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container"> <!-- This is the container -->
+    <form action="home.html" id="loginForm">
+      <h1>Login</h1> <!-- This is the heading that appears in the form -->
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" aria-describedby="username-error" placeholder="Enter username">
+      <span class="error" id="username-error"></span> <!-- This is the empty container for the username error message -->
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" aria-describedby="password-error" placeholder="Enter password">
+      <span class="error" id="password-error"></span> <!-- This is the empty container for the password error message -->
+
+      <input type="submit" value="Login">
+    </form>
+  </div>
+  <!-- Link to the JavaScript file -->
+  <script src="js/login.js"></script>
+</body>
+</html>
+
