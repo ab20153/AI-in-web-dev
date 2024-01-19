@@ -26,5 +26,6 @@ class Authorization {
 //check user's authorization and create an event listener for the Log Out button
 const auth = new Authorization();
 document.querySelector(".logout").addEventListener("click", (e) => {
-	auth.logOut();
-});
+		auth.logOut();
+	}
+);

@@ -9,21 +9,23 @@ class Login {
 	//method to set a local storage item if username and password have been provided
 	validate() {
 		this.form.addEventListener("submit", (e) => {
-			e.preventDefault();
-			var error = false;
-			//validate each field (username, password)
-			this.fields.forEach((field) => {
-				const input = document.querySelector(`#${field}`);
-				if (this.validateFields(input) == false) {
-					error = true;
+					e.preventDefault();
+					var error = false;
+					//validate each field (username, password)
+					this.fields.forEach((field) => {
+							const input = document.querySelector(`#${field}`);
+							if (!this.validateFields(input)) {
+								error = true;
+							}
+						}
+					);
+				//if both fields validated, submit form and generate the local storage item
+				if (!error) {
+					localStorage.setItem("auth", true);
+					this.form.submit();
 				}
-			});
-			//if both fields validated, submit form and generate the local storage item
-			if (!error) {
-				localStorage.setItem("auth", true);
-				this.form.submit();
 			}
-		});
+		);
 	}
 
 	//method to validate a field
