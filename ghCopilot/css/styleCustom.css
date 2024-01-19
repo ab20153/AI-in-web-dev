@@ -1,0 +1,270 @@
+/* Add the following code to your existing style.css file */
+
+/* Set the display, width, margin, and padding for the container */
+.container {
+   display: flex;
+   flex-direction: column;
+   width: 80%;
+   margin: 0 auto;
+   padding: 20px;
+ }
+ 
+ /* Set the display, align-items, justify-content, and margin for the header */
+ header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 20px;
+ }
+ 
+ /* Set the color, text-decoration, and font-size for the logo */
+ .logo {
+   color: #333;
+   text-decoration: none;
+   font-size: 32px;
+ }
+ 
+ /* Set the display, list-style, and margin for the navigation bar */
+ nav ul {
+   display: flex;
+   list-style: none;
+   margin: 0;
+ }
+ 
+ /* Set the color, text-decoration, padding, and margin for the navigation links */
+ nav a {
+   color: #333;
+   text-decoration: none;
+   padding: 10px;
+   margin: 0 5px;
+ }
+ 
+ /* Set the background color, color, padding, border, and cursor for the log out button */
+ #logout {
+   background-color: #4CAF50;
+   color: white;
+   padding: 10px 20px;
+   border: none;
+   cursor: pointer;
+ }
+ 
+ /* Set the display, flex-direction, align-items, and justify-content for the intro section */
+ .intro {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+ }
+ 
+ /* Set the font-size, color, and margin for the intro heading */
+ .intro h1 {
+   font-size: 40px;
+   color: #333;
+   margin: 10px;
+ }
+ 
+ /* Set the font-size, color, and margin for the intro paragraph */
+ .intro p {
+   font-size: 20px;
+   color: #333;
+   margin: 10px;
+ }
+ 
+ /* Set the background color, color, padding, border, and cursor for the intro button */
+ .intro button {
+   background-color: #4CAF50;
+   color: white;
+   padding: 10px 20px;
+   border: none;
+   cursor: pointer;
+ }
+ 
+ /* Set the display, flex-direction, align-items, and justify-content for the achievements section */
+ .achievements {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+ }
+ 
+ /* Set the font-size, color, and margin for the achievements heading */
+ .achievements h2 {
+   font-size: 32px;
+   color: #333;
+   margin: 10px;
+ }
+ 
+ /* Set the display, flex-wrap, and margin for the achievements list */
+ .achievements ul {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 10px;
+ }
+ 
+ /* Set the width, padding, margin, border, and box-shadow for the achievements items */
+ .achievements li {
+   width: 30%;
+   padding: 20px;
+   margin: 10px;
+   border: 1px solid #ccc;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+ 
+ /* Set the font-size, color, and margin for the achievements icons */
+ .achievements i {
+   font-size: 40px;
+   color: #4CAF50;
+   margin: 10px;
+ }
+ 
+ /* Set the font-size, color, and margin for the achievements headings */
+ .achievements p.work-heading {
+   font-size: 24px;
+   color: #333;
+   margin: 10px;
+ }
+ 
+ /* Set the font-size, color, and margin for the achievements texts */
+ .achievements p.work-text {
+   font-size: 16px;
+   color: #333;
+   margin: 10px;
+ }
+ 
+ /* Set the display, flex-direction, align-items, and justify-content for the testimonials section */
+ .testimonials {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+ }
+ 
+ /* Set the font-size, color, and margin for the testimonials heading */
+ .testimonials h2 {
+   font-size: 32px;
+   color: #333;
+   margin: 10px;
+ }
+ 
+ /* Set the display, flex-wrap, and margin for the testimonials list */
+ .testimonials div {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 10px;
+ }
+ 
+ /* Set the width, padding, margin, border, and box-shadow for the testimonials items */
+ .testimonials .testimonial {
+   width: 40%;
+   padding: 20px;
+   margin: 10px;
+   border: 1px solid #ccc;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+ 
+ /* Set the width, height, border-radius, and margin for the testimonials images */
+ .testimonials img {
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   margin: 10px;
+ }
+ 
+ /* Set the font-size, color, and margin for the testimonials texts */
+ .testimonials p {
+   font-size: 16px;
+   color: #333;
+   margin: 10px;
+ }
+ 
+ /* Set the font-size, color, and margin for the testimonials names */
+ .testimonials span {
+   font-size: 20px;
+   color: #333;
+   margin: 10px;
+ }
+ 
+ /* Set the display, flex-direction, align-items, and justify-content for the projects section */
+ .projects {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+ }
+ 
+ /* Set the font-size, color, and margin for the projects heading */
+ .projects h2 {
+   font-size: 32px;
+   color: #333;
+   margin: 10px;
+ }
+ 
+ /* Set the display, flex-wrap, and margin for the projects list */
+ .projects div {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 10px;
+ }
+ 
+ /* Set the width, padding, margin, border, and box-shadow for the projects items */
+ .projects .project {
+   width: 40%;
+   padding: 20px;
+   margin: 10px;
+   border: 1px solid #ccc;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+ 
+ /* Set the width, height, and margin for the projects images */
+ .projects img {
+   width: 300px;
+   height: 200px;
+   margin: 10px;
+ }
+ 
+ /* Set the font-size, color, and margin for the projects texts */
+ .projects p {
+   font-size: 16px;
+   color: #333;
+   margin: 10px;
+ }
+ 
+ /* Set the background color, color, padding, border, and cursor for the projects buttons */
+ .projects button {
+   background-color: #4CAF50;
+   color: white;
+   padding: 10px 20px;
+   border: none;
+   cursor: pointer;
+ }
+ 
+ /* Set the display, align-items, justify-content, and margin for the footer */
+ footer {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-top: 20px;
+ }
+ 
+ /* Set the font-size, color, and margin for the footer texts */
+ footer p {
+   font-size: 16px;
+   color: #333;
+   margin: 10px;
+ }
+ 
+ /* Set the display, list-style, and margin for the footer links */
+ footer ul {
+   display: flex;
+   list-style: none;
+   margin: 10px;
+ }
+ 
+ /* Set the color, text-decoration, padding, and margin for the footer links */
+ footer a {
+   color: #333;
+   text-decoration: none;
+   padding: 10px;
+   margin: 0 5px;
+ }
+ 
