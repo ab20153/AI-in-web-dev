@@ -1,40 +1,38 @@
 // Get the form element
-const loginForm = document.getElementById("login-form");
+const form = document.querySelector('#login-form');
 
-// Add event listener to the form submit event
-loginForm.addEventListener('submit', (event) => {
+// Add event listener for form submission
+form.addEventListener('submit', (event) => {
   event.preventDefault(); // Prevent form submission
-  window.alert("hello");
 
   // Get the username and password input values
-  const usernameInput = document.getElementById('username');
-  const passwordInput = document.getElementById('password');
-  const username = usernameInput.value.trim();
-  const password = passwordInput.value.trim();
+  const username = document.querySelector('#username').value.trim();
+  const password = document.querySelector('#password').value.trim();
 
-  // Get the error message containers
-  const usernameErrorElement = document.getElementById('usernameError');
-  const passwordErrorElement = document.getElementById('passwordError');
-
-  // Clear previous error messages
-  usernameErrorElement.textContent = '';
-  passwordErrorElement.textContent = '';
-
-  // Check if username or password is empty
+  // Check if username or password is blank
   if (username === '') {
     // Display error message for username
+    const usernameErrorElement = document.querySelector('#usernameError');
     usernameErrorElement.textContent = 'Please enter a username.';
+  } else {
+    // Clear error message for username
+    const usernameErrorElement = document.querySelector('#usernameError');
+    usernameErrorElement.textContent = '';
   }
 
   if (password === '') {
     // Display error message for password
+    const passwordErrorElement = document.querySelector('#passwordError');
     passwordErrorElement.textContent = 'Please enter a password.';
+  } else {
+    // Clear error message for password
+    const passwordErrorElement = document.querySelector('#passwordError');
+    passwordErrorElement.textContent = '';
   }
 
-  // Submit the form if both username and password are not empty
+  // Submit the form and store auth in localStorage if both username and password are provided
   if (username !== '' && password !== '') {
-    // Store "auth" name/value pair with value true in localStorage
     localStorage.setItem('auth', true);
-    loginForm.submit();
+    form.submit();
   }
 });

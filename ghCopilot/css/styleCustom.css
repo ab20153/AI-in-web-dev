@@ -1,270 +1,101 @@
-/* Add the following code to your existing style.css file */
+/* style.css */
 
-/* Set the display, width, margin, and padding for the container */
+/* Reset default browser styles */
+body, h1, form, label, input, div {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Center the login form */
 .container {
-   display: flex;
-   flex-direction: column;
-   width: 80%;
-   margin: 0 auto;
-   padding: 20px;
- }
- 
- /* Set the display, align-items, justify-content, and margin for the header */
- header {
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   margin-bottom: 20px;
- }
- 
- /* Set the color, text-decoration, and font-size for the logo */
- .logo {
-   color: #333;
-   text-decoration: none;
-   font-size: 32px;
- }
- 
- /* Set the display, list-style, and margin for the navigation bar */
- nav ul {
-   display: flex;
-   list-style: none;
-   margin: 0;
- }
- 
- /* Set the color, text-decoration, padding, and margin for the navigation links */
- nav a {
-   color: #333;
-   text-decoration: none;
-   padding: 10px;
-   margin: 0 5px;
- }
- 
- /* Set the background color, color, padding, border, and cursor for the log out button */
- #logout {
-   background-color: #4CAF50;
-   color: white;
-   padding: 10px 20px;
-   border: none;
-   cursor: pointer;
- }
- 
- /* Set the display, flex-direction, align-items, and justify-content for the intro section */
- .intro {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
- }
- 
- /* Set the font-size, color, and margin for the intro heading */
- .intro h1 {
-   font-size: 40px;
-   color: #333;
-   margin: 10px;
- }
- 
- /* Set the font-size, color, and margin for the intro paragraph */
- .intro p {
-   font-size: 20px;
-   color: #333;
-   margin: 10px;
- }
- 
- /* Set the background color, color, padding, border, and cursor for the intro button */
- .intro button {
-   background-color: #4CAF50;
-   color: white;
-   padding: 10px 20px;
-   border: none;
-   cursor: pointer;
- }
- 
- /* Set the display, flex-direction, align-items, and justify-content for the achievements section */
- .achievements {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
- }
- 
- /* Set the font-size, color, and margin for the achievements heading */
- .achievements h2 {
-   font-size: 32px;
-   color: #333;
-   margin: 10px;
- }
- 
- /* Set the display, flex-wrap, and margin for the achievements list */
- .achievements ul {
-   display: flex;
-   flex-wrap: wrap;
-   margin: 10px;
- }
- 
- /* Set the width, padding, margin, border, and box-shadow for the achievements items */
- .achievements li {
-   width: 30%;
-   padding: 20px;
-   margin: 10px;
-   border: 1px solid #ccc;
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
- }
- 
- /* Set the font-size, color, and margin for the achievements icons */
- .achievements i {
-   font-size: 40px;
-   color: #4CAF50;
-   margin: 10px;
- }
- 
- /* Set the font-size, color, and margin for the achievements headings */
- .achievements p.work-heading {
-   font-size: 24px;
-   color: #333;
-   margin: 10px;
- }
- 
- /* Set the font-size, color, and margin for the achievements texts */
- .achievements p.work-text {
-   font-size: 16px;
-   color: #333;
-   margin: 10px;
- }
- 
- /* Set the display, flex-direction, align-items, and justify-content for the testimonials section */
- .testimonials {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
- }
- 
- /* Set the font-size, color, and margin for the testimonials heading */
- .testimonials h2 {
-   font-size: 32px;
-   color: #333;
-   margin: 10px;
- }
- 
- /* Set the display, flex-wrap, and margin for the testimonials list */
- .testimonials div {
-   display: flex;
-   flex-wrap: wrap;
-   margin: 10px;
- }
- 
- /* Set the width, padding, margin, border, and box-shadow for the testimonials items */
- .testimonials .testimonial {
-   width: 40%;
-   padding: 20px;
-   margin: 10px;
-   border: 1px solid #ccc;
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
- }
- 
- /* Set the width, height, border-radius, and margin for the testimonials images */
- .testimonials img {
-   width: 100px;
-   height: 100px;
-   border-radius: 50%;
-   margin: 10px;
- }
- 
- /* Set the font-size, color, and margin for the testimonials texts */
- .testimonials p {
-   font-size: 16px;
-   color: #333;
-   margin: 10px;
- }
- 
- /* Set the font-size, color, and margin for the testimonials names */
- .testimonials span {
-   font-size: 20px;
-   color: #333;
-   margin: 10px;
- }
- 
- /* Set the display, flex-direction, align-items, and justify-content for the projects section */
- .projects {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
- }
- 
- /* Set the font-size, color, and margin for the projects heading */
- .projects h2 {
-   font-size: 32px;
-   color: #333;
-   margin: 10px;
- }
- 
- /* Set the display, flex-wrap, and margin for the projects list */
- .projects div {
-   display: flex;
-   flex-wrap: wrap;
-   margin: 10px;
- }
- 
- /* Set the width, padding, margin, border, and box-shadow for the projects items */
- .projects .project {
-   width: 40%;
-   padding: 20px;
-   margin: 10px;
-   border: 1px solid #ccc;
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
- }
- 
- /* Set the width, height, and margin for the projects images */
- .projects img {
-   width: 300px;
-   height: 200px;
-   margin: 10px;
- }
- 
- /* Set the font-size, color, and margin for the projects texts */
- .projects p {
-   font-size: 16px;
-   color: #333;
-   margin: 10px;
- }
- 
- /* Set the background color, color, padding, border, and cursor for the projects buttons */
- .projects button {
-   background-color: #4CAF50;
-   color: white;
-   padding: 10px 20px;
-   border: none;
-   cursor: pointer;
- }
- 
- /* Set the display, align-items, justify-content, and margin for the footer */
- footer {
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   margin-top: 20px;
- }
- 
- /* Set the font-size, color, and margin for the footer texts */
- footer p {
-   font-size: 16px;
-   color: #333;
-   margin: 10px;
- }
- 
- /* Set the display, list-style, and margin for the footer links */
- footer ul {
-   display: flex;
-   list-style: none;
-   margin: 10px;
- }
- 
- /* Set the color, text-decoration, padding, and margin for the footer links */
- footer a {
-   color: #333;
-   text-decoration: none;
-   padding: 10px;
-   margin: 0 5px;
- }
- 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Style the form */
+#login-form {
+  width: 300px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the form elements */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Style the error messages */
+#error {
+  color: red;
+  margin-top: 5px;
+}
+/* Additional styles for home.html */
+#container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav ul li a:hover {
+  color: #4CAF50;
+}
+
+main section {
+  margin-bottom: 20px;
+}
+
+main section h2 {
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
