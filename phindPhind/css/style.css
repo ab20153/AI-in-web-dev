@@ -1,41 +1,44 @@
-/* General styles */
+/* Define a light blue background color */
 body {
-   font-family: Arial, sans-serif;
-   line-height: 1.6em;
-   color: #333;
-   padding: 20px;
+   background-color: #ADD8E6;
 }
 
-header {
-   background: #f4f4f4;
-   padding: 10px;
-   text-align: center;
+/* Define a lighter blue background color and a thin, rounded purple outline for the login form and homepage containers */
+.container {
+   background-color: #B0E0E6;
+   border: 1px solid purple;
+   border-radius: 5px;
 }
 
-footer {
-   background: #f4f4f4;
-   padding: 10px;
-   text-align: center;
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
+/* Define a thin, rounded purple outline for the input fields */
+input[type=text], input[type=password] {
+   border: 1px solid purple;
+   border-radius: 5px;
 }
 
-/* Styles specific to home.html */
-.home h2 {
-   color: #333;
+/* Define a thicker, rounded blue outline for the input fields when they receive focus */
+input[type=text]:focus, input[type=password]:focus {
+   border: 2px solid blue;
+   border-radius: 5px;
 }
 
-.home p {
-   color: #666;
+/* Define a red font color and smaller font size compared to the rest of the text for the error message containers */
+.error {
+   color: red;
+   font-size: 0.9em;
 }
 
-/* Styles specific to index.html */
-.index h2 {
-   color: #f44336;
+/* Define a purple background color and white font color for the "Login" and "Log out" buttons */
+button {
+   background-color: purple;
+   color: white;
+   border: none;
+   padding: 10px 20px;
+   cursor: pointer;
 }
 
-.index p {
-   color: #ffebee;
+/* Define a blue background color and white font color for the "Login" and "Log out" buttons when user hovers over them */
+button:hover {
+   background-color: blue;
+   color: white;
 }
